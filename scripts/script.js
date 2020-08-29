@@ -48,3 +48,8 @@ function playRound (playerChoice, computerChoice) {
     }
 }
 //create a function that utilizes the one round function to play five rounds while keeping score and declares user either a winner or loser
+function game() {
+    for (let i = 0; i < 5; i++) {
+        console.log(playRound(prompt('Enter your choice!'), computerPlay()));
+    }
+}
